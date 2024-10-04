@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js" integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Ajax gyakorlás</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <p class="h1">Ajax gyakorlás</p>
+
+
+        <form>
+            <div class="col-mb-3">
+                <input type="hidden" id="id">
+            </div>
+            <div class="col-mb-3">
+                <label for="name" class="form-label">Név: </label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="col-mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="col-mb-5">
+                <label for="bool">Igaz vagy hamis</label>
+                <input type="checkbox" name="bool" id="bool">
+            </div> 
+            <button class="btn btn-success" id="insert" type="button">Add</button>
+            <button class="btn btn-primary" id="get" type="button">Show</button>
+            <button class="btn btn-warning" id="update" type="button">Update</button>
+            <button class="btn btn-danger" id="delete" type="button">Delete</button>
+        </form>
+
+        <div id="cardDiv" class="row">
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>
